@@ -38,7 +38,7 @@ In the database example each additional column would represent a components data
 | 2      | -  |   JsonData    |-
 | 3 | JsonData   |    JsonData    |JsonData   
 
-
+* * *
 This gives the system its flexibility. Components can be enabled / disabled per entity. In the language example we could add a language column adding the required language data as and when required.
 
 ### System
