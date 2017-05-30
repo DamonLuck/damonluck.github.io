@@ -2,3 +2,8 @@ theme: jekyll-theme-tactile
 title: Damon Luck
 show_downloads: false
 is_project_page: false
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
