@@ -4,6 +4,6 @@ show_downloads: false
 is_project_page: false
 defaults:
   - scope:
-      path: "assets/images/*"
+      path: "assets/images"
     values:
       image: true
