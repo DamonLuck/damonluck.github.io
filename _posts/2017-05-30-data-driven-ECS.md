@@ -23,12 +23,12 @@ When I first tried to get my head around this idea it was difficult. The example
 ### Entity
 The Entity is the handle of the key. Its useless on it's own but provides the handle by which each entity can be referenced. In software terms this could be the primary key in a database table or the key in a dictionary structure.  
 
-->![Entity image]({{ site.url }}/assets/images/2017-05-30/EntityKey.jpg){:class="img-responsive"}<-
+![Entity image]({{ site.url }}/assets/images/2017-05-30/EntityKey.jpg){:class="img-responsive"}
 
 ### Component
 The Component is a cut on the key. The more cuts the more components that exist for that entity. In the dictionary example, one entity key would related to 0 or more component objects.  
 
-->![Component image]({{ site.url }}/assets/images/2017-05-30/ComponentKeys.jpg){:class="img-responsive"}<-
+![Component image]({{ site.url }}/assets/images/2017-05-30/ComponentKeys.jpg){:class="img-responsive"}
 
 ```
     Dictionary<EntityId, List<Component>>
@@ -48,7 +48,7 @@ This gives the system its flexibility. Components can be enabled / disabled per 
 ### System
 The system is therefore the lock. For an entity to be processed by a system the key must fit the lock. This actually means the systems minimum requirements must be met.  
 
-->![System image]({{ site.url }}/assets/images/2017-05-30/Systems.jpg){:class="img-responsive"}<-
+![System image]({{ site.url }}/assets/images/2017-05-30/Systems.jpg){:class="img-responsive"}
 
 If the system required **Component1** only then **Entity1** and **Entity3** would be valid in the above scenario.
 
