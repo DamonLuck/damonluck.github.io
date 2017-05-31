@@ -16,11 +16,9 @@ Some years prior to this I was introduced to the idea of ECS in the gaming world
 This is unlikely to be a great solution to this problem but it does highlight a different view of the problem.
 
 ## Separates data from systems
-
-### Visual definitions
 When I first tried to get my head around this idea it was difficult. The example that really made it clear to me was a visual of keys and locks.
 
-#### Entity
+### Entity
 The Entity is the handle of the key. Its useless on it's own but provides the handle by which each entity can be referenced. In software terms this could be the primary key in a database table or the key in a dictionary structure.  
 
 <figure>
@@ -28,8 +26,7 @@ The Entity is the handle of the key. Its useless on it's own but provides the ha
 	<figcaption>Entity represented by the handle of a key</figcaption>
 </figure>
 
-***
-#### Component
+### Component
 The Component is a cut on the key. The more cuts the more components that exist for that entity. In the dictionary example, one entity key would related to 0 or more component objects.  
 
 <figure>
@@ -52,8 +49,7 @@ In the database example each additional column would represent a components data
 
 This gives the system its flexibility. Components can be enabled / disabled per entity. In the language example we could add a language column adding the required language data as and when required.
 
-***
-#### System
+### System
 The system is therefore the lock. For an entity to be processed by a system the key must fit the lock. This actually means the systems minimum requirements must be met.  
 
 <figure>
@@ -65,7 +61,6 @@ If the system required **Component1** only then **Entity1** and **Entity3** woul
 
 You may now see adding a language component as a requirement to take part in a system means the data can be changed independently of the system. Data that does not match a systems requirements will be filtered out. Once data has been updated to meet the new requirement it will be included in the system.
 
-***
 ## Wrapping things up
 So with this fairly quick overview you should see how we add a language component to any entity independent of the system supporting that language component. We don't need to work from the data layer upwards and we can quickly enable / disable support of a component at the entity level.
 
