@@ -28,9 +28,11 @@ After a bit of practice it becomes second nature and I don't always follow these
 
 The AmbientLogger is actually hidden behind an ISystemNotification interface where I add interfaces to logging, metrics, etc. An instance of ISystemNotification is made available via the static class.
 
+{% capture notice-2 %}
 #### Database transactions
 
 Another area where things get tricky are transactions. Here I have a **secondary interface** used by Core which is in turn triggered by a **primary interface**.
+{% endcapture %}
 
 Let's make things really difficult and say I've got an Oracle Advanced queue as the **primary interface**. Each message from the queue executes an action on Core which in turn executes a DB write with the Oracle data adapter (**secondary interface**).
 
