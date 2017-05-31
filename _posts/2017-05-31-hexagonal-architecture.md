@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Hexagonal architecture
 categories: Architecture
 ---
