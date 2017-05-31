@@ -10,6 +10,7 @@ As mentioned above the key here is project references. You start with a **Core**
 ### Key terms Port and Adaptor
 These interfaces are defined as the ports. The implemented interfaces are the adaptors. One port can have many adaptors, for example a database adaptor and a mock data provider adaptor.
 
+<blockquote>
 #### Keeping things clean
 
  - The **Core** project does not reference any other project
@@ -17,16 +18,21 @@ These interfaces are defined as the ports. The implemented interfaces are the ad
  - Every **adaptor** references the core project
  - No **adaptor** references any other **adaptor**
  - One top level project references **Core** and all **adaptors**. This is generally the build .exe and brings all dependencies together.
+</blockquote>
 
 ### Sounds simple
 After a bit of practice it becomes second nature and I don't always follow these points.
 
+<blockquote>
 #### Logging
+</blockquote>
  One area where break things is logging, here I implement a static AmbientLogger and add that to an **Infrastructure** project. Core then references this infrastructure project.
 
 The AmbientLogger is actually hidden behind an ISystemNotification interface where I add intefaces to logging, metrics, etc. An instance of ISystemNotification is made available via the static class.
 
+<blockquote>
 #### Database transactions
+</blockquote>
 Another area where things get tricky are transactions. Here I have a **secondary interface** used by Core which is in turn triggered by a **primary interface**.
 
 Let's make things really difficult and say I've got an Oracle Advanced queue as the **primary interface**. Each message from the queue executes an action on Core which in turn executes a DB write with the Oracle data adapter (**secondary interface**).
