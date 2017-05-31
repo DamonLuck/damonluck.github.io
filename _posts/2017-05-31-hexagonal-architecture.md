@@ -22,6 +22,13 @@ These interfaces are defined as the ports. The implemented interfaces are the ad
  - One top level project references **Core** and all **adaptors**. This is generally the build .exe and brings all dependencies together.
 {% endcapture %}
 
+{% capture notice-2 %}
+#### New Site Features
+
+* You can now have cover images on blog pages
+* Drafts will now auto-save while writing
+{% endcapture %}
+
 ### Sounds simple
 After a bit of practice it becomes second nature and I don't always follow these points.
 
