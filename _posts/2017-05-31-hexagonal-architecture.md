@@ -4,7 +4,7 @@ header:
   overlay_color: "#333"
 categories: Architecture
 ---
-<p class="intro">Under the N-Tier approach something always ends up leaking beyond their expected boundaries, especially when many developers are working on the same source. With Hexagonal architecture I've been able to keep these boundaries clean and easily spot any attempts to break these boundaries, which is often the case.</p>
+Under the N-Tier approach something always ends up leaking beyond their expected boundaries, especially when many developers are working on the same source. With Hexagonal architecture I've been able to keep these boundaries clean and easily spot any attempts to break these boundaries, which is often the case.
 
 ## So why's this any different
 As mentioned above the key here is project references. You start with a **Core** project where the common domain / business logic lives. If you need something from an external data source you add an interface to **Core** and call this. These data source interfaces are called **Secondary interfaces**. Anything exposed from the **Core** project itself is done so via a **Primary interface**.

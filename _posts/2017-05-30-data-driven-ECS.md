@@ -4,7 +4,7 @@ header:
   overlay_color: "#333"
 categories: ECS
 ---
-<p class="intro">An Entity Component System (ECS) as I understand it separates data from systems. I going to explore this statement using a real world example I've seen at work over the past year.</p>
+An Entity Component System (ECS) as I understand it separates data from systems. I going to explore this statement using a real world example I've seen at work over the past year.
 
 ## Real world problem
 Until recently a lot of systems supported one country and one language. Due to growth additional countries and languages are now required. Everything I've seen / worked on had been written with one country and one language in mind. Therefore, changes had to be made to underlying data structures and consumers of those structures.
