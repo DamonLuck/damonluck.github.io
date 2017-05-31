@@ -20,7 +20,6 @@ This is unlikely to be a great solution to this problem but it does highlight a 
 ### Visual definitions
 When I first tried to get my head around this idea it was difficult. The example that really made it clear to me was a visual of keys and locks.
 
-***
 #### Entity
 The Entity is the handle of the key. Its useless on it's own but provides the handle by which each entity can be referenced. In software terms this could be the primary key in a database table or the key in a dictionary structure.  
 
@@ -65,8 +64,8 @@ The system is therefore the lock. For an entity to be processed by a system the 
 If the system required **Component1** only then **Entity1** and **Entity3** would be valid in the above scenario.
 
 You may now see adding a language component as a requirement to take part in a system means the data can be changed independently of the system. Data that does not match a systems requirements will be filtered out. Once data has been updated to meet the new requirement it will be included in the system.
-***
 
+***
 ## Wrapping things up
 So with this fairly quick overview you should see how we add a language component to any entity independent of the system supporting that language component. We don't need to work from the data layer upwards and we can quickly enable / disable support of a component at the entity level.
 
