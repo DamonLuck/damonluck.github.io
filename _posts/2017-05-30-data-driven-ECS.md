@@ -25,7 +25,7 @@ The Entity is the handle of the key. Its useless on it's own but provides the ha
 
 <figure>
 	<img src="{{ '/assets/img/2017-05-30/EntityKey.jpg' | prepend: site.baseurl }}" alt="">
-	<figcaption>Fig1. - Entity represented by the handle of a key</figcaption>
+	<figcaption>Entity represented by the handle of a key</figcaption>
 </figure>
 
 ### Component
@@ -33,7 +33,7 @@ The Component is a cut on the key. The more cuts the more components that exist 
 
 <figure>
 	<img src="{{ '/assets/img/2017-05-30/ComponentKeys.jpg' | prepend: site.baseurl }}" alt="">
-	<figcaption>Fig1. - Component represented by cuts of a key</figcaption>
+	<figcaption>Components represented by cuts of a key</figcaption>
 </figure>
 
 ```
@@ -56,7 +56,7 @@ The system is therefore the lock. For an entity to be processed by a system the 
 
 <figure>
 	<img src="{{ '/assets/img/2017-05-30/Systems.jpg' | prepend: site.baseurl }}" alt="">
-	<figcaption>Fig1. - System represented as a lock activated by the correct keys</figcaption>
+	<figcaption>Systems represented as a locks activated by the correct keys</figcaption>
 </figure>
 
 If the system required **Component1** only then **Entity1** and **Entity3** would be valid in the above scenario.
