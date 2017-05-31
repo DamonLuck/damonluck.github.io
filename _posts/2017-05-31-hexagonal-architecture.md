@@ -11,27 +11,27 @@ As mentioned above the key here is project references. You start with a **Core**
 These interfaces are defined as the ports. The implemented interfaces are the adaptors. One port can have many adaptors, for example a database adaptor and a mock data provider adaptor.
 
 <blockquote>
-#### Keeping things clean
+Keeping things clean
+</blockquote>
 
  - The **Core** project does not reference any other project
  - Any model required by **Core** will be defined within **Core**
  - Every **adaptor** references the core project
  - No **adaptor** references any other **adaptor**
  - One top level project references **Core** and all **adaptors**. This is generally the build .exe and brings all dependencies together.
-</blockquote>
 
 ### Sounds simple
 After a bit of practice it becomes second nature and I don't always follow these points.
 
 <blockquote>
-#### Logging
+Logging
 </blockquote>
  One area where break things is logging, here I implement a static AmbientLogger and add that to an **Infrastructure** project. Core then references this infrastructure project.
 
 The AmbientLogger is actually hidden behind an ISystemNotification interface where I add intefaces to logging, metrics, etc. An instance of ISystemNotification is made available via the static class.
 
 <blockquote>
-#### Database transactions
+Database transactions
 </blockquote>
 Another area where things get tricky are transactions. Here I have a **secondary interface** used by Core which is in turn triggered by a **primary interface**.
 
