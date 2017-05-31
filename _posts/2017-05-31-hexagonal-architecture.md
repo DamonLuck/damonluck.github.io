@@ -1,5 +1,7 @@
 ---
 title: Hexagonal architecture
+header:
+  overlay_color: "#333"
 categories: Architecture
 ---
 <p class="intro">Under the N-Tier approach something always ends up leaking beyond their expected boundaries, especially when many developers are working on the same source. With Hexagonal architecture I've been able to keep these boundaries clean and easily spot any attempts to break these boundaries, which is often the case.</p>
