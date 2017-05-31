@@ -41,7 +41,7 @@ The Component is a cut on the key. The more cuts the more components that exist 
     Dictionary<EntityId, List<Component>>
 ```
 
-In the database example each additional column would represent a components data. This one shows the actual components data serialised as Json. Not every entity has every component.
+In the database example each additional column would represent a components data. This one shows the actual components data serialized as Json. Not every entity has every component.
 
 | EntityId        | Component1           | Component2           | Component3  |
 |:-:|:-:|:-:|:-:|

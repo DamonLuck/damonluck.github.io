@@ -29,7 +29,7 @@ After a bit of practice it becomes second nature and I don't always follow these
 #### Logging
  One area where break things is logging, here I implement a static AmbientLogger and add that to an **Infrastructure** project. Core then references this infrastructure project.
 
-The AmbientLogger is actually hidden behind an ISystemNotification interface where I add intefaces to logging, metrics, etc. An instance of ISystemNotification is made available via the static class.
+The AmbientLogger is actually hidden behind an ISystemNotification interface where I add interfaces to logging, metrics, etc. An instance of ISystemNotification is made available via the static class.
 {% endcapture %}
 
 {% capture notice-2 %}
@@ -41,7 +41,7 @@ Let's make things really difficult and say I've got an Oracle Advanced queue as 
 
 Passing the transaction through **Core** isn't possible as I'm not allowed to reference any other project in **Core**. The two **adaptors** should know about each other either. Therefore, things need to be wired up in the .exe project in such a way that the active database connection / transaction is shared across the executed code.
 
-The end result should have the **primary interface** initialise and commit or rollback the transaction. This transaction must encapsulate DB calls made by the **secondary interface**.
+The end result should have the **primary interface** initialize and commit or rollback the transaction. This transaction must encapsulate DB calls made by the **secondary interface**.
 {% endcapture %}
 
 ## Has this created a cleaner architecture?
