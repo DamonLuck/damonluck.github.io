@@ -24,7 +24,7 @@ When I first tried to get my head around this idea it was difficult. The example
 The Entity is the handle of the key. Its useless on it's own but provides the handle by which each entity can be referenced. In software terms this could be the primary key in a database table or the key in a dictionary structure.  
 </blockquote>
 <figure>
-	<img src="{{ '/assets/img/2017-05-30/EntityKey.jpg' | prepend: site.baseurl }}" alt="">
+	<img src="/assets/img/2017-05-30/EntityKey.jpg" alt="">
 	<figcaption>Entity represented by the handle of a key</figcaption>
 </figure>
 
@@ -33,7 +33,7 @@ The Entity is the handle of the key. Its useless on it's own but provides the ha
 The Component is a cut on the key. The more cuts the more components that exist for that entity. In the dictionary example, one entity key would related to 0 or more component objects.  
 </blockquote>
 <figure>
-	<img src="{{ '/assets/img/2017-05-30/ComponentKeys.jpg' | prepend: site.baseurl }}" alt="">
+	<img src="/assets/img/2017-05-30/ComponentKeys.jpg" alt="">
 	<figcaption>Components represented by cuts of a key</figcaption>
 </figure>
 
@@ -57,7 +57,7 @@ This gives the system its flexibility. Components can be enabled / disabled per 
 The system is therefore the lock. For an entity to be processed by a system the key must fit the lock. This actually means the systems minimum requirements must be met.  
 </blockquote>
 <figure>
-	<img src="{{ '/assets/img/2017-05-30/Systems.jpg' | prepend: site.baseurl }}" alt="">
+	<img src="/assets/img/2017-05-30/Systems.jpg" alt="">
 	<figcaption>Systems represented as a locks activated by the correct keys</figcaption>
 </figure>
 
