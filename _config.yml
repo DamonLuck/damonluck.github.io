@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Damon Luck"
+title                    : "My thoughts and experience as a Software Developer"
 title_separator          : "-"
 name                     : "Damon Luck"
 description              : "Personal blog"
@@ -78,7 +78,7 @@ analytics:
 # Site Author
 author:
   name             : "Damon Luck"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/img/bio-photo.jpg"
   bio              : "Software Developer"
   location         : "Netherlands"
   email            :

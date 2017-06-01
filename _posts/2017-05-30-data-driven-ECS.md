@@ -2,7 +2,7 @@
 title: Data driven with an Entity Component System
 header:
   overlay_color: "#333"
-categories: ECS
+tags: ECS
 ---
 An Entity Component System (ECS) as I understand it separates data from systems. I going to explore this statement using a real world example I've seen at work over the past year.
 
