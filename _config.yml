@@ -11,7 +11,7 @@ title                    : "My thoughts and experience as a Software Developer"
 title_separator          : "-"
 name                     : "Damon Luck"
 description              : "Personal blog"
-url                      : https://damonluck.github.io
+url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -78,7 +78,7 @@ analytics:
 # Site Author
 author:
   name             : "Damon Luck"
-  avatar           : "assets/img/bio-photo.jpg"
+  avatar           : "/assets/img/bio-photo.jpg"
   bio              : "Software Developer"
   location         : "Netherlands"
   email            :
