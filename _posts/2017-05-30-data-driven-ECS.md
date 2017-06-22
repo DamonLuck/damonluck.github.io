@@ -2,7 +2,9 @@
 title: Data driven with an Entity Component System
 header:
   overlay_color: "#333"
-tags: ECS
+tags:
+- Architecture
+- ECS
 ---
 An Entity Component System (ECS) as I understand it separates data from systems. I going to explore this statement using a real world example I've seen at work over the past year.
 
@@ -65,7 +67,7 @@ If the system required **Component1** only then **Entity1** and **Entity3** woul
 
 You may now see adding a language component as a requirement to take part in a system means the data can be changed independently of the system. Data that does not match a systems requirements will be filtered out. Once data has been updated to meet the new requirement it will be included in the system.
 
-## Wrapping things up
+## Summary
 So with this fairly quick overview you should see how we add a language component to any entity independent of the system supporting that language component. We don't need to work from the data layer upwards and we can quickly enable / disable support of a component at the entity level.
 
 In my next post I'll look a little closer at components and how their individual scope tends to shrink towards very fine responsibilities.
