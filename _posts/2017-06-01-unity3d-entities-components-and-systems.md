@@ -7,9 +7,13 @@ tags:
 - Unity3D
 ---
 {% include base_path %}
-Unity3D has GameObjects (Entities), Components and Systems (the underlying game engine).
+The following gives a very high-level flyby of Unity3D as an ECS system. From what I understand a new ECS system will be introduced in the future, particularly to support multiple cores via an approach they've called Jobs. For now, Unity3D has GameObjects (which I believe relate closely to Entities), Components and Systems (the underlying game engine, physics engine, etc).
 
-Following on from my [Data Driven ECS article]({{ "/data-driven-ECS/" | absolute_url }}) the following takes a high level look at Unity3D.
+### Real life use
+
+I recently attended the Unite conference in Amsterdam https://unite.unity.com/2017/europe to find out more about this system. I'm not a game developer and my interest was primarily in understanding the business value offered by this tool. Most of the content was game focused but there were a few business applications; **Fugro Roames** 3D world being particularly impressive.
+
+Another product I particularly liked was **Yousician**. The company behind this had implemented the business value in their own assemblies and built the UX experience in Unity3D.   
 
 ### Entities
 
@@ -59,4 +63,6 @@ Different components take part at different points of this flow. GameObjects don
 
 ## Summary
 
-The real power here is the ability to add components and enhance this interaction with other components. Perhaps you'll create a different type of motion component that runs in a different system phase and interacts with other components if they exist in the GameObject. You can also search the GameObject hierarchy as well as looking on the global level using statics.
+The power provided by the Unity3D tools allows a team of developers, game designers, artists and more to work together build a product. Developers can design and develop components, game designers can piece together these components and workflows describing real world interactions, artists can build the graphics and animations to bring the world alive.
+
+The editor provides a number of tools but more importantly its extensible and there are thousands of additional tools available for download. This provides more than just software developers with the ability to turn ideas into working software. 
